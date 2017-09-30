@@ -6,10 +6,10 @@ use IEEE.numeric_std.all; -- good for typecasting opperations
 use IEEE.std_logic_textio.all;
 
 
-entity adder_8_bit_testbench is
-end adder_8_bit_testbench;
+entity adder_4_bit_testbench is
+end adder_4_bit_testbench;
 
-architecture behavior of adder_8_bit_testbench is
+architecture behavior of adder_4_bit_testbench is
 
   -- define the maximum delay for the DUT
   constant BIT_WIDTH : integer := 8;
