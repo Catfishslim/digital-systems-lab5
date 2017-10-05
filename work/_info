@@ -1,129 +1,64 @@
 m255
 K3
-z0
 13
 cModel Technology
-dH:\EGRE365\VHDL\lab5
+Z0 dH:\EGRE365\VHDL\lab5
 Eadder_4_bit_testbench
-Z0 w1506798601
-Z1 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
-Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z5 dC:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5
-Z6 8C:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/adder_4_bit_testbench.vhd
-Z7 FC:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/adder_4_bit_testbench.vhd
+Z1 w1506630110
+Z2 dH:\EGRE365\VHDL\lab5
+Z3 8H:/EGRE365/VHDL/lab5/Lab5_TestBench.vhd
+Z4 FH:/EGRE365/VHDL/lab5/Lab5_TestBench.vhd
 l0
-L9
-V7`cVJJXB3mzUWZ;?8<`fN1
-!s100 19LTcSH]=8g<YKTUaP`970
-Z8 OP;C;10.4a;61
+L1
+VT:g1oF>L9^gjEJ>889k_k1
+!s100 4BJQ8^`m00^lI27TVYe=j1
+Z5 OL;C;10.0b;49
 32
-Z9 !s110 1506798605
-!i10b 1
-Z10 !s108 1506798605.000000
-Z11 !s90 -reportprogress|300|-work|work|C:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/adder_4_bit_testbench.vhd|
-Z12 !s107 C:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/adder_4_bit_testbench.vhd|
-!i113 1
-Z13 o-work work -O0
-Z14 tExplicit 1
+Z6 !s108 1506630458.235000
+Z7 !s90 -reportprogress|300|-work|work|H:/EGRE365/VHDL/lab5/Lab5_TestBench.vhd|
+Z8 !s107 H:/EGRE365/VHDL/lab5/Lab5_TestBench.vhd|
+Z9 o-work work
+Z10 tExplicit 1
 Abehavior
-Z15 DEx4 work 11 n_bit_adder 0 22 H:E4c<7685dA[C2`hjgf63
-R1
-R2
-R3
-R4
-DEx4 work 21 adder_4_bit_testbench 0 22 7`cVJJXB3mzUWZ;?8<`fN1
-l32
-L12
-V1c2C==I?iO_^L01R]En=63
-!s100 aL_e^7W[VhTH`gJl8g5c]2
-R8
+Z11 DEx4 work 11 n_bit_adder 0 22 0ojkl4Fzh6aaAbMZk[@J`1
+DEx4 work 21 adder_4_bit_testbench 0 22 T:g1oF>L9^gjEJ>889k_k1
+l24
+L4
+V8<mQ=ibVg7DaKmn2SH@>F1
+!s100 ]8dS=4=o<BWEXB?5UZHQA2
+R5
 32
+R6
+R7
+R8
 R9
-!i10b 1
 R10
-R11
-R12
-!i113 1
-R13
-R14
-Eadder_8_bit_testbench
-Z16 w1506799506
-R1
-R2
-R3
-R4
-R5
-Z17 8C:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/adder_8_bit_testbench.vhd
-Z18 FC:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/adder_8_bit_testbench.vhd
-l0
-L9
-V^Uj=cQeU4lC;_fHQkgLhS0
-!s100 mYIRQj2<JLBM1P@49@;Jj2
-R8
-32
-!s110 1506799529
-!i10b 1
-Z19 !s108 1506799529.000000
-Z20 !s90 -reportprogress|300|-work|work|C:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/adder_8_bit_testbench.vhd|
-Z21 !s107 C:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/adder_8_bit_testbench.vhd|
-!i113 1
-R13
-R14
-Abehavior
-R15
-R1
-R2
-R3
-R4
-DEx4 work 21 adder_8_bit_testbench 0 22 ^Uj=cQeU4lC;_fHQkgLhS0
-l32
-L12
-VONPlSoCzH302k?`d3LMke2
-!s100 c<JINOcBRc`TRiJ?Jf0Ne3
-R8
-32
-!s110 1506799530
-!i10b 1
-R19
-R20
-R21
-!i113 1
-R13
-R14
 En_bit_adder
-Z22 w1506794620
-R5
-Z23 8C:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/nbit_adder_delay.vhd
-Z24 FC:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/nbit_adder_delay.vhd
+Z12 w1506630069
+R2
+Z13 8H:/EGRE365/VHDL/lab5/Lab5_8bit_adder.vhd
+Z14 FH:/EGRE365/VHDL/lab5/Lab5_8bit_adder.vhd
 l0
-L5
-VH:E4c<7685dA[C2`hjgf63
-!s100 TgP6U;mYQGkoi`hzTRoRM3
-R8
+L1
+V0ojkl4Fzh6aaAbMZk[@J`1
+R5
 32
-Z25 !s110 1506799385
-!i10b 1
-Z26 !s108 1506799385.000000
-Z27 !s90 -reportprogress|300|-work|work|C:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/nbit_adder_delay.vhd|
-Z28 !s107 C:/Users/cannellajs2/Desktop/GradSchool/EGRE365/Labs/digital-systems-lab5/nbit_adder_delay.vhd|
-!i113 1
-R13
-R14
+Z15 !s108 1506630440.246000
+Z16 !s90 -reportprogress|300|-work|work|H:/EGRE365/VHDL/lab5/Lab5_8bit_adder.vhd|
+Z17 !s107 H:/EGRE365/VHDL/lab5/Lab5_8bit_adder.vhd|
+R9
+R10
+!s100 gaI4z3>DE@oCFob85fNf23
 Asimple
-R15
-l21
-L18
-V[JdRiDCoE]g3g6aGD<n[?3
-!s100 kgFQbMPV?VeX@aQniV@eL2
-R8
+R11
+l12
+L9
+V6llB2RIT^;OTbelBSYaG:0
+R5
 32
-R25
-!i10b 1
-R26
-R27
-R28
-!i113 1
-R13
-R14
+R15
+R16
+R17
+R9
+R10
+!s100 48C2RCmMSd55H;<:iV0;K2
