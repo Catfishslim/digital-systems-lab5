@@ -1,28 +1,20 @@
-library STD;
-use STD.textio.all; -- used for printing output to a txt file for easier documentation
-library IEEE;
-use IEEE.std_logic_1164.all; -- for std logic tpes
-use IEEE.numeric_std.all; -- good for typecasting opperations
-use IEEE.std_logic_textio.all;
+entity adder_4_bit_testbench is
+end adder_4_bit_testbench;
 
-
-entity adder_8_bit_testbench is
-end adder_8_bit_testbench;
-
-architecture behavior of adder_8_bit_testbench is
+architecture behavior of adder_4_bit_testbench is
 
   -- define the maximum delay for the DUT
-  constant BIT_WIDTH : integer := 8;
-  constant MAX_DELAY : time := (2*BIT_WIDTH*14)* 1 ns;-- 2*NumBits*(2*XOR_time)
+  constant MAX_DELAY : time := 60 ns; 
+  constant BIT_WIDTH : integer := 4;
   constant NO_VECTORS : integer := 5;
 
   -- declare a constant to hold an array of input values
   type input_value_array is array (1 to NO_VECTORS) of bit_vector(0 to BIT_WIDTH-1);
   type output_value_array is array (1 to NO_VECTORS) of bit_vector(0 to BIT_WIDTH-1);
-  constant x_sig_values : input_value_array := ("00000000","00010000","00000010","11110000","00000000");
-  constant y_sig_values : input_value_array := ("00000000","00010000","00000110","01001101","00000001");
+  constant x_sig_values : input_value_array := ("0000","0001","0010","0011","0000");
+  constant y_sig_values : input_value_array := ("0000","0001","0110","1101","0001");
   constant c_in_sig_values : bit_vector(1 to NO_VECTORS) := ('0','0','0','1','1');
-  constant s_sig_values : output_value_array := ("00000000","00100000","00001000","00111110","00000010");
+  constant s_sig_values : output_value_array := ("0000","0010","1000","0001","0010");
   constant c_out_sig_values : bit_vector(1 to NO_VECTORS) := ('0','0','0','1','0');
 
   -- define signals that connect to DUT
@@ -54,7 +46,6 @@ architecture behavior of adder_8_bit_testbench is
     -- the outputs
     monitor : process
       variable i : integer;
-      variable L : line;
       begin
         wait on x_sig; -- wait for event on x_sig
         wait for MAX_DELAY/2; -- wait half of the "cycle time"
@@ -64,22 +55,14 @@ architecture behavior of adder_8_bit_testbench is
                      c_in_sig = c_in_sig_values(i));
           i := i + 1;
         end loop;
-        deallocate (L);  -- get rid of leftovers from last time 
+        
         assert i <= NO_VECTORS -- check to see that i is in bounds
           report "ERROR - no valid input value found"
           severity failure;
         
-        if( s_sig /= s_sig_values(i)) then
-	  write(L, string'("ERROR - incorrect value on s_sig: s_sig = "));
-          write(L, s_sig);
-          write(L, string'(", s_sig_values(i) = "));
-          write(L, s_sig_values(i));
-	  write(L, string'(", i = "));
-	  write(L, i);
-          report L.all
-		
+        assert s_sig = s_sig_values(i)
+          report "ERROR - incorrect value on s_sig"
           severity error;
-	end if;
         
     end process monitor;
     
